@@ -7,61 +7,63 @@
         <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <script src="js/bootstrap-js/bootstrap.min.js" defer></script>
+        <script src="js/calculator.js" defer></script>
         <title>calculadora</title>
     </head>
 
     <body>
         <div class="container">
-            <div class="display">
-                <form name="calculadora">
-                    <input type="textfield" name="result" autocomplete="off" readonly onmousedown="false"/>
-                    <br>
-                    <div class="left-side">
-                        <button type="button" id="1">1</button>
-                        <button type="button" id="2">2</button>
-                        <button type="button" id="3">3</button>
-                        
-                        <button type="button" id="4">4</button>
-                        <button type="button" id="5">5</button>
-                        <button type="button" id="6">6</button>
-                        
-                        <button type="button" id="7">7</button>
-                        <button type="button" id="8">8</button>
-                        <button type="button" id="9">9</button>
-                        
-                        <button type="button" class="simbolo" id=",">,</button>
-                        <button type="button" id="0">0</button>
-                        <button type="button" class="simbolo" id="=">=</button>
-                        
-                        <button type="button" class="simbolo" id="abre-parentesis">(</button>
-                        <button type="button" class="simbolo" id="cierra-parentesis">)</button>
-                    </div>
+           
+            <form name="calculadora">
+                <div class="display">0</div>
+                <br>
+                <div class="left-side">
+                    <button type="button" id="1">1</button>
+                    <button type="button" id="2">2</button>
+                    <button type="button" id="3">3</button>
+                    
+                    <button type="button" id="4">4</button>
+                    <button type="button" id="5">5</button>
+                    <button type="button" id="6">6</button>
+                    
+                    <button type="button" id="7">7</button>
+                    <button type="button" id="8">8</button>
+                    <button type="button" id="9">9</button>
+                    
+                    <button type="button" class="simbolo" id=",">,</button>
+                    <button type="button" id="0">0</button>
+                    <button type="button" class="simbolo" id="=">=</button>
+                    
+                    <button type="button" class="simbolo" id="abre-parentesis">(</button>
+                    <button type="button" class="simbolo" id="cierra-parentesis">)</button>
+                    <button type="button" id="delete"><-</button>
+                </div>
 
-                    <div class="right-side">
-                        <button type="button" class="operador" id="C">C</button>
-                        <button type="button" class="operador" id="+">+</button>
+                <div class="right-side">
+                    <button type="button" class="operador" id="c">C</button>
+                    <button type="button" class="operador" id="+">+</button>
 
-                        <button type="button" class="operador" id="-">-</button>
-                        <button type="button" class="operador" id="x">X</button>
+                    <button type="button" class="operador" id="-">-</button>
+                    <button type="button" class="operador" id="*">*</button>
 
-                        <button type="button" class="operador" id="/">/</button>
-                        <button type="button" class="operador" id="raiz">√</button>
-                        
-                        <button type="button" class="operador" id="sin">Sin</button>
-                        <button type="button" class="operador" id="cos">Cos</button>
+                    <button type="button" class="operador" id="/">/</button>
+                    <button type="button" class="operador" id="raiz">√</button>
+                    
+                    <button type="button" class="operador" id="sin">sin(</button>
+                    <button type="button" class="operador" id="cos">cos(</button>
 
-                        <button type="button" class="operador" id="potencia">x^y </button>
-                        <button type="button" class="operador" id="tan">Tan</button>
-                    </div>
+                    <button type="button" class="operador" id="potencia">x^y </button>
+                    <button type="button" class="operador" id="tan">tan(</button>
+                </div>
 
-                    <div class="right-side-down">
-                        <button type="button" class="operador" id="oct">Oct</button>
-                        <button type="button" class="operador" id="bin">Bin</button>
-                        <button type="button" class="operador" id="hex">Hex</button>
-                        <button type="button" class="operador" id="dec">Dec</button>
-                    </div>
-                </form>
-            </div>
+                <div class="right-side-down">
+                    <button type="button" class="operador" id="oct">Oct</button>
+                    <button type="button" class="operador" id="bin">Bin</button>
+                    <button type="button" class="operador" id="hex">Hex</button>
+                    <button type="button" class="operador" id="dec">Dec</button>
+                </div>
+            </form>
+        
         </div>
     </body>
 </html>
