@@ -29,7 +29,45 @@ BUTTONS.forEach(button => {
             return;
         }
 
-       
+        if (button.id === "sin") {
+            DISPLAY.textContent = Math.sin(DISPLAY.textContent);
+            return;
+        } else if (button.id === "cos") {
+            DISPLAY.textContent = Math.cos(DISPLAY.textContent);
+            return;
+        } else if (button.id === "tan") {
+            DISPLAY.textContent = Math.tan(DISPLAY.textContent);
+            return;
+        } else if (button.id === "raiz") {
+            DISPLAY.textContent = Math.sqrt(DISPLAY.textContent);
+            return;
+        } else if (button.id === "potencia") {
+            DISPLAY.textContent += "**";
+            return;
+        }
+
+        if (button.id === "oct") {
+            let numberToOcta = parseInt(DISPLAY.textContent);
+            let octaNumber = numberToOcta.toString(8);
+            DISPLAY.textContent = octaNumber;
+            return;
+        } else if (button.id === "bin") {
+            let numberToBin = parseInt(DISPLAY.textContent);
+            let binNumber = numberToBin.toString(2);
+            DISPLAY.textContent = binNumber;
+            return;
+        } else if (button.id === "hex") {
+            let numberToBin = parseInt(DISPLAY.textContent);
+            let binNumber = numberToBin.toString(16);
+            DISPLAY.textContent = binNumber;
+            return;
+        } else if (button.id === "dec") {
+            let numberToDec = parseInt(DISPLAY.textContent);
+            let binNumber = numberToBin.toString(10);
+            DISPLAY.textContent = binNumber;
+            return;
+        }
+
 
         if (DISPLAY.textContent === "0") {
             DISPLAY.textContent = pressedButton;
